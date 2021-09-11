@@ -1,0 +1,43 @@
+Name:         istio-sidecar-injector
+Namespace:    
+Labels:       app=sidecar-injector
+              operator.istio.io/component=Injector
+              operator.istio.io/managed=Reconcile
+              operator.istio.io/version=1.4.6
+              release=istio
+Annotations:  <none>
+API Version:  admissionregistration.k8s.io/v1beta1
+Kind:         MutatingWebhookConfiguration
+Metadata:
+  Creation Timestamp:  2021-09-11T23:01:57Z
+  Generation:          3
+  Resource Version:    6720
+  Self Link:           /apis/admissionregistration.k8s.io/v1beta1/mutatingwebhookconfigurations/istio-sidecar-injector
+  UID:                 43ac0dda-1354-11ec-b277-0242887a149a
+Webhooks:
+  Admission Review Versions:
+    v1beta1
+  Client Config:
+    Ca Bundle:  LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUMzakNDQWNhZ0F3SUJBZ0lSQU4xTFB3cFpmWFBrM05MWlEvWnVFZjR3RFFZSktvWklodmNOQVFFTEJRQXcKR0RFV01CUUdBMVVFQ2hNTlkyeDFjM1JsY2k1c2IyTmhiREFlRncweU1UQTVNVEV5TXpBeU1qTmFGdzB6TVRBNQpNRGt5TXpBeU1qTmFNQmd4RmpBVUJnTlZCQW9URFdOc2RYTjBaWEl1Ykc5allXd3dnZ0VpTUEwR0NTcUdTSWIzCkRRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQzUvSEw3NWJObUYwTDBCK2EzbFdzbW5kQ0NqZDM3Z2t5WFZ0R0wKRmpDMkI5cFZsNTJ0NkVxdTRMQ0lFN1BnNExldktva3lxTkd6aExtYTFQbnZNTzZsdEdMK2dBTGpiaW00MzY2MApqN2hnTjJOM0xZOWREL2t1d0dhUU5NQlBXakZrWnUzS1lRNWF3amF5YXlEM0FLcDRsQnByNDJDMytnYjV3elZCCklKc1lBUzJhU1lYS0FiNUNnSVlHZ0FXakVpZVZaQ1kvWVova2I1Vk5RZElwUFd4QnBJU3M0b0JoYW5oWFlEeXUKUmZGQjQvMmpwVjllUVN0VEhKRDdXQnhTdW50YzNVU09IZjZpRnlNRWRKK2luQVRGNzRLUHcxVnFiVTV2RW5nMApaMG9VcnNEWXMwYlczWEJkTFBtM0hJOWZxZzQ2a0g5c1h1UGxyUnFhK1luYXZzUlJBZ01CQUFHakl6QWhNQTRHCkExVWREd0VCL3dRRUF3SUNCREFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQTBHQ1NxR1NJYjNEUUVCQ3dVQUE0SUIKQVFDc0ZRT2I0MExhU0U0b1NyR3Q1VXB2K0xRUDlsYk9iWVdoVU9EVGdBYTdPL25EenNXbkpkU05ObUt4UEJFUQpURXJBakNIV2RMVzdRV01PcGFBbjRMOHJaTEd1RldITVhpYXJ2bGVGcTk5NnNRQXNuVnRVMVhxTG9IOExVakZDCjZXR2dBVjI2VTl6T0kvSWx1aU5kOHJ2QzBpM05iN0pncmxYNmtEdHpzemJmVjNrMnZOSFh4bzhHWi9lb2o3L1IKNmZ1cEZad0dyYW1lYXlRR0IxWlMyN25zOU5Bd1JUNHM3djZZQWNBSzNwZlZJZXB3MTdOeW80S1VFdnArcmpOSwp6RXRqbVRJd0FZTXNlRUFFM0syeTIrQklNTC9iQjBGRFpDbUJvNlVuRUFJaG1tRDVSSVg4Q1g0V0xzMitLclM4CmRPenppejU1Nis2RFk4RTlNOXlPODZNQQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+    Service:
+      Name:        istio-sidecar-injector
+      Namespace:   istio-system
+      Path:        /inject
+  Failure Policy:  Fail
+  Name:            sidecar-injector.istio.io
+  Namespace Selector:
+    Match Labels:
+      Istio - Injection:  enabled
+  Rules:
+    API Groups:
+      
+    API Versions:
+      v1
+    Operations:
+      CREATE
+    Resources:
+      pods
+    Scope:          *
+  Side Effects:     Unknown
+  Timeout Seconds:  30
+Events:             <none>
